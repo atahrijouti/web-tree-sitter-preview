@@ -1,0 +1,6 @@
+{
+  "unbundle": "./node_modules/unbundle/dist/client/index.js",
+  "web-tree-sitter": "./node_modules/web-tree-sitter/tree-sitter.js",
+  "web-tree-sitter/tree-sitter.wasm": "./node_modules/web-tree-sitter/tree-sitter.wasm",
+  "tree-sitter-javascript/tree-sitter-javascript.wasm": "./node_modules/tree-sitter-javascript/tree-sitter-javascript.wasm"
+}

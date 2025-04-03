@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tree sitter preview</title>
+
+    <link rel="stylesheet" href="./pico.fluid.classless.min.css" />
+    <link rel="stylesheet" href="./global-styles.css" />
+
+    <meta name="description" content="Preview your tree-sitter theme" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <div class="root">
+      <div class="tree-sitter-page">
+        <h2>tree-sitter</h2>
+      </div>
+    </div>
+    <script type="importmap">
+      {
+        "imports": {
+          "unbundle": "./node_modules/unbundle/dist/client/index.js",
+          "web-tree-sitter": "./node_modules/web-tree-sitter/tree-sitter.js",
+          "web-tree-sitter/tree-sitter.wasm": "./node_modules/web-tree-sitter/tree-sitter.wasm",
+          "tree-sitter-javascript/tree-sitter-javascript.wasm": "./node_modules/tree-sitter-javascript/tree-sitter-javascript.wasm"
+        }
+      }
+    </script>
+    <script type="module">
+      import * as pageModule from "/app/home/index.js";
+      if (typeof pageModule.ready === "function") {
+        document.addEventListener("DOMContentLoaded", pageModule.ready);
+      }
+    </script>
+  </body>
+</html>
