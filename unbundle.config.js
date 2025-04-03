@@ -1,3 +1,3 @@
 export default {
-  BASE_URL: "/web-tree-sitter-preview",
+  BASE_URL: process.env.NODE_ENV ? "/" : "/web-tree-sitter-preview",
 }

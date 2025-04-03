@@ -2,7 +2,7 @@
   "name": "web-tree-sitter-preview",
   "type": "module",
   "scripts": {
-    "serve": "bun run unbundle-serve",
+    "serve": "NODE_ENV=development bun run unbundle-serve",
     "build": "bun run unbundle-build",
     "build:prod": "NODE_ENV=production bun run unbundle-build"
   },
