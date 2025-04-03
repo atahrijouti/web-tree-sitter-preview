@@ -10,7 +10,7 @@ export const ready = async () => {
   await Parser.init({})
   const parser = new Parser()
   const JavaScript = await Language.load(
-    "/node_modules/tree-sitter-javascript/tree-sitter-javascript.wasm",
+    "node_modules/tree-sitter-javascript/tree-sitter-javascript.wasm",
   )
   parser.setLanguage(JavaScript)
   const sourceCode = "let x = 1; console.log(x);"
