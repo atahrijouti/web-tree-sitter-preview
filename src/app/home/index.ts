@@ -6,7 +6,5 @@ export const metadata: Metadata = {
 }
 
 export const content = () => {
-
-  return html`<div class="home-page">Show the stuff here please</div>`
-
+  return html`<div class="home-page">The Web Tree-Sitter Previewer will go here</div>`
 }
