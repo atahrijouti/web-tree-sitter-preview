@@ -1,12 +1,23 @@
 {
   "name": "web-tree-sitter-preview",
-  "module": "index.ts",
   "type": "module",
-  "private": true,
-  "devDependencies": {
-    "@types/bun": "latest"
+  "scripts": {
+    "serve": "bun run unbundle-serve",
+    "build": "bun run unbundle-build",
+    "build:prod": "NODE_ENV=production bun run unbundle-build"
   },
-  "peerDependencies": {
-    "typescript": "^5"
+  "trustedDependencies": [
+    "unbundle"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@types/bun": "^1.2.1",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.22.0",
+    "unbundle": "github:atahrijouti/unbundle#main"
   }
 }
