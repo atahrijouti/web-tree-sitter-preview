@@ -19,5 +19,9 @@
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.22.0",
     "unbundle": "github:atahrijouti/unbundle#main"
+  },
+  "dependencies": {
+    "tree-sitter-javascript": "^0.23.1",
+    "web-tree-sitter": "^0.25.3"
   }
 }
