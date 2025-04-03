@@ -20,15 +20,15 @@
     <script type="importmap">
       {
         "imports": {
-          "unbundle": "./node_modules/unbundle/dist/client/index.js",
-          "web-tree-sitter": "./node_modules/web-tree-sitter/tree-sitter.js",
-          "web-tree-sitter/tree-sitter.wasm": "./node_modules/web-tree-sitter/tree-sitter.wasm",
-          "tree-sitter-javascript/tree-sitter-javascript.wasm": "./node_modules/tree-sitter-javascript/tree-sitter-javascript.wasm"
+          "unbundle": "/tree-sitter/node_modules/unbundle/dist/client/index.js",
+          "web-tree-sitter": "/tree-sitter/node_modules/web-tree-sitter/tree-sitter.js",
+          "web-tree-sitter/tree-sitter.wasm": "/tree-sitter/node_modules/web-tree-sitter/tree-sitter.wasm",
+          "tree-sitter-javascript/tree-sitter-javascript.wasm": "/tree-sitter/node_modules/tree-sitter-javascript/tree-sitter-javascript.wasm"
         }
       }
     </script>
     <script type="module">
-      import * as pageModule from "/app/home/index.js";
+      import * as pageModule from "/tree-sitter/app/home/index.js";
       if (typeof pageModule.ready === "function") {
         document.addEventListener("DOMContentLoaded", pageModule.ready);
       }
