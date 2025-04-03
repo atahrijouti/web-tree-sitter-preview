@@ -1,5 +1,5 @@
 import { html, type Metadata } from "unbundle"
-import { Language, Node, Parser, Tree, TreeCursor } from "web-tree-sitter"
+import { Language, Node, Parser, TreeCursor } from "web-tree-sitter"
 
 export const metadata: Metadata = {
   title: "Tree sitter preview",
@@ -51,7 +51,6 @@ const highlightCode = (cursor: TreeCursor, sourceCode: string) => {
       if (!node) continue
 
       const { startIndex, endIndex, type } = node
-      const length = endIndex - startIndex
 
       // Check if this node has children
       let hasChildren = false
